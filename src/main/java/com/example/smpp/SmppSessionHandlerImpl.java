@@ -25,6 +25,17 @@ public class SmppSessionHandlerImpl extends DefaultSmppSessionHandler {
     @Override
     public PduResponse firePduRequestReceived(PduRequest pduRequest) {
         log.info("PDU request received: {}", pduRequest);
+
+        // SubmitSm
+        // принимаем сообщение, назначаем messageId, ответчаем в SubmitSmResp
+
+        // EnquireLink
+        // принимаем пинг, отвечаем EnquireLinkResp
+        // !! кроме того, нужно следить за интервалами пингов на соединении
+
+        // Unbind
+        // принимаем разрыа соединения, гасим сессию
+
         return null;
     }
 

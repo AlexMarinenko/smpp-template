@@ -15,6 +15,7 @@ public class SmppServerHandlerImpl implements SmppServerHandler {
                                      SmppSessionConfiguration smppSessionConfiguration,
                                      BaseBind baseBind) throws SmppProcessingException {
         log.info("Bind request received: {}", baseBind);
+        // Аутентификация и сохранение сессии и  инфромации о кленте
     }
 
     @Override
